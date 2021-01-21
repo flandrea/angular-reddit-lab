@@ -1,0 +1,21 @@
+body {
+    background-color: lightgrey;
+}
+div {
+    background-color: linen;
+    font-family: sans-serif;
+}
+h1 {
+    display: block;
+    align-items: center;
+    color: cadetblue;
+}
+.image {
+    display: block;
+    padding-left: 10px;
+}
+.link{
+    display: block;
+    color: black;
+    padding-left: 8px;
+}

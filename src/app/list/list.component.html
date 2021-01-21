@@ -1,0 +1,8 @@
+<!-- <app-list *ngFor="let post of redditAPI.posts" [post]="post"></app-list> -->
+<body>
+<div *ngFor="let post of redditAPI.posts">
+    <h1>{{ post.title }}</h1>
+    <img class="image" [src]='post.image'/>
+    <a class="link" [attr.href]= 'post.link'>{{ post.link }}</a>
+  </div>
+  </body>
