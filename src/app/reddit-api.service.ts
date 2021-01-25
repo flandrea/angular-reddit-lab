@@ -12,7 +12,7 @@ interface RedditPost {
   providedIn: "root",
 })
 export class RedditApiService {
-  // inject HTTP Client here
+
   posts: RedditPost[] = [];
 
   constructor(private http: HttpClient) {}
@@ -33,14 +33,9 @@ export class RedditApiService {
           this.posts.push(redditPost);
         }
         console.log(this.posts)
-      }, // this is what happens on success
+      }, 
       (error) => {
         console.log(error);
-      } // this is what happens if I get an error from the API
     );
-    // array of posts exists in response.data.children
-    // loop through array
-    // for each post
-    // data lives in post.data
   }
 }
